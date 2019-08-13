@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Id Selectors</title>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<style type="text/css">
+#beginner{background-color: #008CBA;display: inline-block;font-size: 16px; padding: 10px 20px;border-radius: 12px;} /* Blue */
+#advanced{background-color: #f44336;display: inline-block;font-size: 16px; padding: 10px 20px;border-radius: 12px;} /* Red */ 
+#panel, #flip {  
+    padding: 5px;  
+    text-align: center;  
+    background-color: rgb(51, 238, 229);  
+    border: solid 1px #c3c3c3;  
+}  
+#panel {  
+    padding: 50px;  
+    display:none;  
+}  
+   </style>
+<script type="text/javascript">
+$(document).ready(function(){
+    $("#b").hide();
+    $("#a").hide();
+});
+
+$(document).ready(function(){
+    $("#beginner").click(function () {
+    $("#b").css("backgroundColor", "Red");
+  //  $("#b").show();
+    $("#b").fadeIn(1000); 
+    $("#a").hide();
+});
+});
+
+$(document).ready(function(){
+    $("#advanced").click(function () {
+    $("#a").css("backgroundColor", "yellow");
+   // $("#a").show();
+    $("#a").fadeIn(1000); 
+    $("#b").hide();
+});
+});
+
+$(document).ready(function(){  
+    $("#flip").click(function(){  
+        $("#panel").slideToggle("slow");  
+    });  
+});  
+</script>
+</head>
+<body>
+ <h2>Quinnox Training</h2>
+ <p>Select Courses</p>
+ <div id="b">
+<h3>Beginner Courses</h3>
+<ul>
+    <li>Core Java</li>
+    <li>Java Script</li>
+</ul>
+ </div>
+
+ <div id="a">
+    <h3>Advanced Courses</h3>
+    <ul>
+        <li>Servlet</li>
+        <li>JSP</li>
+        <li>Hibernate</li>
+    </ul>
+     </div>
+
+<button id="beginner">Beginner Courses</button> 
+<button id="advanced">Advanced Courses</button> 
+<br><br><br>
+<div id="flip">Click here for Early Registration</div>  
+<div id="panel">Send a mail to admin@training.com</div> 
+</body>
+</html>                   
