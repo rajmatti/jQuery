@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> jQuery DOM Manipulation</title>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        
+    </head>
+     
+<body>
+    <h1>jQuery Basics</h1>
+    <p>By Quinnox</p> 
+    <ul>
+        <li>Golden Retriever</li>
+        <li>Syberian Husky</li>
+        <li>Boxer</li>
+    </ul>  
+</body>
+</html>
