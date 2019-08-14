@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> jQuery DOM Manipulation</title>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    </head>
+     
+<body>
+    <h1>jQuery DOM Methods - val()</h1>
+    <p>By Quinnox</p> 
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                alert("Value: " + $("#sometext").val());
+            });
+        });
+        </script>
+    <input type="text" id="sometext" value=" "></p>
+    <button>Submit</button>    
+</body>
+</html>
