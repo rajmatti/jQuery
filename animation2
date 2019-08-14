@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> JQuery Animation</title>
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<script>
+
+$(document).ready(function(){
+  $("button").click(function(){
+    var div = $("div");
+    runAnimation();
+    function runAnimation(){
+       
+      div.animate({height:300},"slow");
+      div.animate({width:300,marginLeft:100,marginTop:200},"slow");
+      div.animate({color:"white"},"slow"); 
+      div.animate({height:100,marginLeft:300},"slow");
+    
+      div.css("backgroundColor","orange");   
+      div.animate({width:100,marginTop:0,marginLeft:0},"slow",callBackAnimation);
+    }
+function callBackAnimation(){
+     // alert("Animation completed");
+    }
+
+  });
+});
+</script>
+</head>
+<body>
+    <style>
+    div{
+        animation-name: one;
+        animation-duration: 5s;
+          }
+
+        @keyframes one{
+            20%{
+                transform: rotate(50deg) !important; 
+                color:white important;
+            }
+            30%{
+                transform: scaleX(1.5);
+            }
+            50%{
+                transform: rotate(190deg);
+                color:green;
+            }
+            80%{
+                transform: rotate(60deg);
+                border-radius: 50%;
+                transform: skewY(20deg);
+            }
+            100%{
+                transform: translate(100px);
+                transform: skewY(20deg);
+            }
+        }
+    </style>
+  
+<button>Run</button>
+<div style="width:70px;height:70px;position:absolute;left:20px;top:50px;background-color:orange;"></div>
+
+</body>
+</html>
