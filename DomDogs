@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> jQuery Tutorial</title>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+     
+     <script type="text/javascript">
+        $(document).ready(function(){
+            $("ul").before("<h2>My favourite dogs!!</h2>")
+            $("ul").after("<h2>All dogs are adorable!!</h2>")
+
+            $("li").text()
+            $("p").text("Welcome to this fun of jQuery World")
+
+            $("li:first").html()
+            $("li:last").html("<li> German shepherd</li>")
+
+            $("h1").css("background-color", "blue")
+            $("ul li").css("color", "green")   
+        });
+    </script>
+    </head>
+<body>
+    <h1>jQuery Basics</h1>
+    <p>By Quninnox</p> 
+    <ul>
+        <li>Golden Retriever</li>
+        <li>Syberian Husky</li>
+        <li>Boxer</li>
+    </ul>  
+</body>
+</html>
